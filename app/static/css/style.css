@@ -1,0 +1,252 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+
+/*--- Typography ---*/
+h1,
+h2,
+h3,
+h4{
+	margin: 5px 0px;
+	font-weight: 300;}
+h1{
+	font-size: 36px;
+	color: #505458;
+	line-height: 43px;
+	letter-spacing: -1px;}
+h2{
+	font-size: 30px;
+	color: #505458;
+	line-height: 35px;
+    letter-spacing: -1px;}
+h3{
+	font-size: 24px;
+	color: #282323;
+	line-height: 30px;}
+h4{
+	font-size: 18px;
+	color: #282323;
+	line-height: 22px;}
+/*Normal Text*/
+p,
+.nt{
+	font-family: 'Raleway';
+	font-size:13.5px;
+	line-height: 22px;}
+/*Conmbierte un 'p' en texto pequeño, util para small devices*/
+.st	{
+	font-size: 12px;
+	line-height: 18px;}
+/*Jumbotron para textos muy grandes [Span="jt"]*/
+.jt{
+	letter-spacing: -3px;
+	font-family: 'Oswald';
+	color: #383838;
+	font-size: 70px;}
+/*Jumbotron subtitulos texto pequeño debajo de jumbotron [Span="js"]*/
+.js{
+	position: relative;
+	top:20px;
+	left:-128px;}
+/*Normal*/
+.fn{font-weight: 400;}
+/*Light*/
+.fl{font-weight: 300;}
+/*Bold*/
+.fb{font-weight: 600;}
+/*Italica/Especial para hacer variantes en los titulos grandes*/
+.fi{font-style: italic;}
+/*Mayusculas*/
+.fu{text-transform: uppercase;}
+/*Quita el leatter-spacing -1px que tienen los h1 y h2*/
+.nls{letter-spacing: 0px}
+/*Para numeros numericos como '.00' */
+.nn{font-size: 16px;line-height: 0px;position: relative;top:-9px;}
+
+.text-center{
+	text-align: center;
+}
+
+/*--- Helper Classes ---*/
+/*Grid-Block*/
+.grid-title{background-color: white;padding: 2px 15px 0px 15px;margin:0px;height: 50px;line-height: 55px;}
+.grid-body{background-color: white;padding:15px 25px 15px 25px;min-height: 250px;}
+
+/*Borders*/
+.border-t{border-top: 1px solid #ddd;}
+.border-b{border-bottom: 1px solid #ddd;}
+.border-l{border-left: 1px solid #ddd;}
+.border-r{border-right: 1px solid #ddd;}
+.border{border:1px solid #ddd;}
+/*Paddings / Margins*/
+.pad-0{padding: 0px}
+.mar-0{margin:0px}
+.pad-6{padding: 6px}
+.pad-12{padding: 12px}
+.pad-18{padding: 18px}
+.pad-24{padding: 24px}
+.pad-30{padding: 30px}
+.pad-36{padding: 36px}
+.mar-6{margin: 6px}
+.mar-12{margin:12px}
+.mar-18{margin: 18px}
+.mar-24{margin: 24px}
+.mar-30{margin: 30px}
+.mar-36{margin: 36px}
+/*Top*/
+.pad-t-6  {padding-top:6px}
+.pad-t-12 {padding-top:12px}
+.pad-t-18 {padding-top:18px}
+.pad-t-24 {padding-top:24px}
+.pad-t-30 {padding-top:30px}
+.pad-t-36 {padding-top:36px}
+
+.mar-t-6  {margin-top:6px}
+.mar-t-12 {margin-top:12px}
+.mar-t-18 {margin-top:18px}
+.mar-t-24 {margin-top:24px}
+.mar-t-30 {margin-top:30px}
+.mar-t-36 {margin-top:36px}
+/*Bottom*/
+.pad-b-6  {padding-bottom:6px}
+.pad-b-12 {padding-bottom:12px}
+.pad-b-18 {padding-bottom:18px}
+.pad-b-24 {padding-bottom:24px}
+.pad-b-30 {padding-bottom:30px}
+.pad-b-36 {padding-bottom:36px}
+
+.mar-b-6  {margin-bottom:6px}
+.mar-b-12 {margin-bottom:12px}
+.mar-b-18 {margin-bottom:18px}
+.mar-b-24 {margin-bottom:24px}
+.mar-b-30 {margin-bottom:30px}
+.mar-b-36 {margin-bottom:36px}
+/*Top&Bottom*/
+.pad-tb-6  {padding: 6px 0px}
+.pad-tb-12 {padding: 12px 0px}
+.pad-tb-18 {padding: 18px 0px}
+.pad-tb-24 {padding: 24px 0px}
+.pad-tb-30 {padding: 30px 0px}
+.pad-tb-36 {padding: 36px 0px}
+
+.mar-tb-6  {margin: 6px 0px}
+.mar-tb-12 {margin: 12px 0px}
+.mar-tb-18 {margin: 18px 0px}
+.mar-tb-24 {margin: 24px 0px}
+.mar-tb-30 {margin: 30px 0px}
+.mar-tb-36 {margin: 36px 0px}
+/*Left*/
+.pad-l-6  {padding-left:6px}
+.pad-l-12 {padding-left:12px}
+.pad-l-18 {padding-left:18px}
+.pad-l-24 {padding-left:24px}
+.pad-l-30 {padding-left:30px}
+.pad-l-36 {padding-left:36px}
+
+.mar-l-6  {margin-left:6px}
+.mar-l-12  {margin-left:12px}
+.mar-l-18 {margin-left:18px}
+.mar-l-24 {margin-left:24px}
+.mar-l-30 {margin-left:30px}
+.mar-l-36 {margin-left:36px}
+/*Right*/
+.pad-r-6  {padding-right:6px}
+.pad-r-12 {padding-right:12px}
+.pad-r-18 {padding-right:18px}
+.pad-r-24 {padding-right:24px}
+.pad-r-30 {padding-right:30px}
+.pad-r-36 {padding-right:36px}
+
+.mar-r-6  {margin-right:6px}
+.mar-r-12  {margin-right:12px}
+.mar-r-18 {margin-right:18px}
+.mar-r-24 {margin-right:24px}
+.mar-r-30 {margin-right:30px}
+.mar-r-36 {margin-right:36px}
+/*Left&Right*/
+.pad-lr-6  {padding:0px 6px}
+.pad-lr-12 {padding:0px 12px}
+.pad-lr-18 {padding:0px 18px}
+.pad-lr-24 {padding:0px 24px}
+.pad-lr-30 {padding:0px 30px}
+.pad-lr-36 {padding:0px 36px}
+
+.mar-lr-6  {margin:0px 6px}
+.mar-lr-12  {margin:0px 12px}
+.mar-lr-18 {margin:0px 18px}
+.mar-lr-24 {margin:0px 24px}
+.mar-lr-30 {margin:0px 30px}
+.mar-lr-36 {margin:0px 36px}
+/*Centra un blque en medio del #container*/
+.center-block{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);}
+/*Centra una imagen con clase .img-responsive*/
+.img-center {
+	text-align: center;
+    margin:0px auto;}
+/*Combierte block en inline-block*/
+.inline{
+	display: inline-block;
+}
+/*Combierte block en block*/
+.block{
+	display:block;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+
+.wrapper{
+	margin: 70px auto;
+	width: 350px;
+}
+
+.content{
+	padding: 15px;
+	border-bottom: 2px solid #E5E9EC;
+}
+.content .ver-persona{
+	margin: auto;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	background-color: #b3e293;
+	color: white;
+	border-radius: 2.5px;
+	display: inline-block;
+}
+
+.content .borrar-persona{
+	margin: auto;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	background-color: #db5252;
+	color: white;
+	border-radius: 2.5px;
+	display: inline-block;
+}
+
+.back{
+	font-size: 17px;
+	color: #0090D9
+}

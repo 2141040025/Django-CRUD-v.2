@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ver | {{persona.nombre}} {{persona.apellido_paterno}}</title>
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<h2 class="text-center">Simple aplicacíon <span class="fb">CRUD</span> en <span class="fb">DJANGO</span>.</h2>
+		<a class="back mar-l-6" href="/"><i class="fa fa-arrow-circle-left"></i></a>
+	{#------------------------------------------------------------------------------------#}
+		<div class="content text-center mar-t-36">
+			<img src="{{ persona.foto.url}}" width="170" height="170">
+			<p class="fi">{{persona.nombre|title}} {{persona.apellido_paterno|title}} {{persona.apellido_materno|title}} </p>
+<div>			<a class="ver-persona" href="editar/{{persona.id}}">Editar</a>
+			<a class="borrar-persona" href="borrar/{{persona.id}}">Borrar</a></div>
+		</div>
+		<div class="content">
+			<p><span class="fb">Dirección</span>: {{persona.direccion|upper}}</p>			
+			<p><span class="fb">Telefonó</span>: {{persona.telefono|upper}}</p>
+		</div>
+	{#------------------------------------------------------------------------------------#}
+
+	</div>
+</body>
+</html>

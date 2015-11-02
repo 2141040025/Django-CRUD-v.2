@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplicación CRUD</title>
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="wrapper">
+
+		<h2 class="text-center">Simple aplicacíon <span class="fb">CRUD</span> en <span class="fb">DJANGO</span>.</h2>
+		<a class="back mar-l-6" href="persona/crear/"><i class="fa fa-plus-square"></i></a>
+		<br>
+		<br>
+		<br>
+		
+		{#------------------------------------------------------------------------------------#}
+			{% for persona in personas %}
+				<div class="content text-center">
+					<img src="{{ persona.foto.url}}" width="70" height="70">
+					<p class="fi">{{persona.apellido_paterno|title}} {{persona.apellido_materno|title}} {{persona.nombre|title}}</p>
+					<div>
+						<a class="ver-persona" href="persona/{{persona.id}}">Ver Persona</a>						
+					</div>
+
+				</div>
+			{% endfor %}
+		{#------------------------------------------------------------------------------------#}
+
+	</div>
+</body>
+</html>

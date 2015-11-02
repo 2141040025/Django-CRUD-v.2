@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Borrar | {{persona.nombre}} {{persona.apellido_paterno}}</title>
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	
+
+	<div class="wrapper">
+
+		<h2 class="text-center">Simple aplicacíon <span class="fb">CRUD</span> en <span class="fb">DJANGO</span>.</h2>
+		<a class="back mar-l-6" href="/persona/{{persona.id}}"><i class="fa fa-arrow-circle-left"></i></a>
+	{#------------------------------------------------------------------------------------#}
+		<div class="content text-center mar-t-36">
+			<form method="post">{% csrf_token %}
+				<h4>¿Deseas borrar a {{persona.nombre}} {{persona.apellido_paterno}}?</h4>
+			    <input type="submit" value="Borrar">
+			</form>
+		</div>
+
+	{#------------------------------------------------------------------------------------#}
+
+	</div>
+
+
+
+
+</body>
+</html>
